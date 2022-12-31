@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Poppins:ital,wght@1,200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: rgb(156, 156, 196);
+    font-family: 'Noto Sans', sans-serif;
+}
+.contenedor{
+    min-height: 120vh;
+    width: 80%;
+    margin: 4rem auto;
+    background-color: rgb(224, 219, 219);
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.contenedor-izq{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #1a253f;
+}
+.contenedor-der{
+    grid-column: span 5;
+    background-color: azure;
+    height: 100%;
+}
+.izq{
+    padding: 1rem 2rem;
+}
+.perfil{
+    width: 100%;
+    border-bottom: 1px solid rgb(156, 156, 196);
+}
+.foto-perfil{
+    width: 100%;
+    text-align: center;
+}
+.perfil img{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(156, 156, 196);
+}
+.texto-perfil{
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+.titulo{
+    font-size: 1.1rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+}
+.texto{
+   font-size:medium;
+
+}
+.contacto ul{
+    padding: 1.3rem 0;
+}
+.contacto ul li{
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+}
+.contacto ul li i{
+    padding-right: 1rem;
+    font-size: 1.1;
+}
+.icon{
+    color: rgb(156, 156, 196);
+}
+.experiencias ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 10px;
+}
+.texto-conocimientos{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.barra-progreso{
+    width: 100%;
+    height: .4rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 12px;
+}
+.barra{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(156, 156, 196);
+    border-radius: 12px;
+}
+.progreso-html{
+    width: 70%;
+}
+.progreso-css{
+    width: 50%;
+}
+.progreso-js{
+    width:10% ;
+
+}
+.progreso-c{
+    width: 80%;
+}
+.boton-mostrar{
+    margin-top: 20px;
+    background-color: #1a253f;
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+    padding: 15px 32px;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 10px 0px rgb(156, 156, 196);
+    cursor: pointer;
+}
+.texto-oculto{
+    display: none;
+}
+.mostrar{
+    display:block;
+}
+.persona-der{
+    padding: 2rem 3rem;
+}
+.titulo-acerca-persona{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+}
+.acerca-persona{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.titulo-der{
+    font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	color: #1a253f;
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+.informacion-der{
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+}
+.informacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contenido{
+    border-left: 1px solid #1a253f;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.fecha-trabajo{
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+    color:blueviolet;
+}
+.contenido-der{
+    margin-top: 14px;
+}
+.titulo-contenido{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.titulo-contenido::before{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #1a253f;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+}
+@media screen and (max-width: 850px){
+    .titulo-der::after{
+        width: 35%;
+    }  
+}
+@media screen and (max-width: 680px){
+    .titulo-der::after{
+        width: 30%;
+    }  
+}
+@media screen and (max-width: 780px){
+    .informacion{
+        grid-template-columns: repeat(1,1fr);
+    }  
+}
+@media screen and (max-width: 780px){
+    .contenedor-izq{
+       grid-column: span 3;
+    }
+    .contenedor-der{
+        grid-column: span 4;
+    }  
+}
+@media screen and (max-width: 1200px){
+    .contenedor{
+        grid-template-columns: repeat(1,1fr);
+    }  
+}
+@media screen and (max-width: 7000px){
+    .perfil img{
+        width: 60%;
+    }  
+}
+@media screen and (max-width: 390px){
+    .texto-perfil{
+        font-size: 1.5rem;
+    }  
+}
